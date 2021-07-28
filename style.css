@@ -35,7 +35,6 @@ nav {
 }
 
 .nav-header {
-  background-color: #111;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -140,7 +139,7 @@ main p {
   font-size: 16px;
 }
 
-main button {
+  button {
   font-family: var(--ff-secondary);
   font-weight: 400;
   text-transform: uppercase;
@@ -154,10 +153,49 @@ main button {
   transition: 0.3s ease-in-out;
 }
 
-main button:hover {
+ button:hover {
   background-color: #000;
 }
 
+.quisommesnous {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+
+  padding: 20px;
+}
+
+.quisommesnous img {
+  width: 350px;
+  position: relative;
+  top: -50px;
+}
+
+.quisommesnous  h2 {
+  color: var(--clr-primary);
+  font-family: var(--ff-primary);
+  font-size: 27px;
+  font-weight: 300;
+}
+
+.quisommesnous  p {
+  color: var(--clr-secondary);
+  font-family: var(--ff-secondary);
+  font-size: 16px;
+  font-weight: 400;
+
+  padding: 20px 0;
+}
+
+.navbar--color-background {
+  background-color: rgba(0,0,0,.7)!important;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.navbar--color-background path {
+  fill: var(--primary-color);
+  transition: fill 300ms ease-in-out;
+}
 @media (min-width: 980px) {
   .nav-center {
     display: flex;
@@ -199,5 +237,31 @@ main button:hover {
 
   main h1 {
     font-size: 70px;
+  }
+
+  .quisommesnous {
+    flex-direction: row;
+  }
+
+  .text-section {
+    padding-left: 100px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .quisommesnous h2 {
+    font-size: 60px;
+  }
+
+  .quisommesnous p {
+    font-size: 17px;
+  }
+
+  .quisommesnous img {
+    width: 435px;
+  }
+
+  .img-section {
+    width: 50%;
   }
 }

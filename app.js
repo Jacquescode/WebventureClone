@@ -10,11 +10,11 @@ navToggle.addEventListener("click", function () {
 window.onscroll = () => {
   if (window.pageYOffset > 50) {
     document
-      .getElementById("top-header")
-      .classList.add("top-header--white-background");
+      .getElementById("navbar")
+      .classList.add("navbar--color-background");
   } else {
     document
-      .getElementById("top-header")
-      .classList.remove("top-header--white-background");
+      .getElementById("navbar")
+      .classList.remove("navbar--color-background");
   }
 }
