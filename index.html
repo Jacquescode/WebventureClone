@@ -1,73 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css">
-  <title>Webventure Clone</title>
-</head>
-<body>
-  <nav id="navbar">
-    <div class="nav-center">
-      <div class="nav-header">
-        <div class="logo">
-          <a href="index.html">
-            <img src="/Images/Logo.png" alt="Logo" width="100px">
-          </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Webventure Clone</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <div class="logo">
+            <a href="index.html">
+              <img src="/Images/Logo.png" alt="Logo" width="100px" />
+            </a>
+          </div>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-        <button class="nav-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
+        <ul class="links">
+          <li>
+            <a href="index.html">À Propos</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Nos Réalisations</a>
+          </li>
+          <li>
+            <a href="#">Soumission</a>
+          </li>
+          <li>
+            <a href="#">Catalogue</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <a class="phone-num" href="#"
+          >&#128222;&nbsp;&nbsp;&nbsp;(581) 681-0686</a
+        >
       </div>
-      <ul class="links">
-        <li>
-          <a href="index.html">À Propos</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Nos Réalisations</a>
-        </li>
-        <li>
-          <a href="#">Soumission</a>
-        </li>
-        <li>
-          <a href="#">Catalogue</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-      <a class="phone-num" href="#">&#128222;&nbsp;&nbsp;&nbsp;(581) 681-0686</a>
-    </div>
-  </nav>
-  <main>
-    <div class="main-content">
-      <h1>Agence Web Spécialisée en Conception Web</h1>
-      <p>Ici, vous combinez le meilleur des deux mondes ! Un site web plus qu’abordable et un rendu à la hauteur des vos attentes. C’est simple, chez WebVenture, on crée, on innove, pour vous !</p>
-      <button>Nos Réalisations</button>
-    </div>
-  </main>
-  <section class="quisommesnous">
-    <div class="text-section">
-      <h2>Qui Sommes-Nous ?</h2>
-      <p>Au cours des dernières années, nous avons été en mesure de cibler 
-        les réels besoins de nos clients et nous avons créé une recette clé en main
-        pour permettre aux entrepreneurs et aux entreprises d’ici d’avoir la 
-        visibilité qu’ils méritent sans devoir débourser plusieurs milliers de dollars.
-        <br>
-        Nous agissons en toute transparence avec nos clients et c’est pour cette raison 
-        que nous en avons plus de 250 en moins de deux ans !
-      </p>
-      <button>obtenir une soumission</button>
-    </div>
-    <div class="img-section">
-    <img src="/Images/quisommesnous.jpg" alt="quisommesnous-images">
-  </div>
-  </section>
-  <script src="app.js"></script>
-</body>
+    </nav>
+    <main>
+      <div class="main-content">
+        <h1>Agence Web Spécialisée en Conception Web</h1>
+        <p>
+          Ici, vous combinez le meilleur des deux mondes ! Un site web plus
+          qu’abordable et un rendu à la hauteur des vos attentes. C’est simple,
+          chez WebVenture, on crée, on innove, pour vous !
+        </p>
+        <button>Nos Réalisations</button>
+      </div>
+    </main>
+    <section class="quisommesnous">
+      <div class="text-section">
+        <h2>Qui Sommes-Nous ?</h2>
+        <p>
+          Au cours des dernières années, nous avons été en mesure de cibler les
+          réels besoins de nos clients et nous avons créé une recette clé en
+          main pour permettre aux entrepreneurs et aux entreprises d’ici d’avoir
+          la visibilité qu’ils méritent sans devoir débourser plusieurs milliers
+          de dollars.
+          <br />
+          Nous agissons en toute transparence avec nos clients et c’est pour
+          cette raison que nous en avons plus de 250 en moins de deux ans !
+        </p>
+        <button>obtenir une soumission</button>
+      </div>
+      <div class="img-section">
+        <img src="/Images/quisommesnous.jpg" alt="quisommesnous-images" />
+      </div>
+      <div class="shape-divider"></div>
+    </section>
+    <section class="services-ctn">
+      <h2>Nos Services</h2>
+      <div class="services">
+        <div class="service top">
+          <img src="/Images/siteweb.png" alt="siteweb" width="106px" />
+          <h5>Site Web</h5>
+          <p>
+            Vos clients ont besoin d’une interface simple et efficace lorsqu’il
+            navigue sur votre site.
+          </p>
+        </div>
+        <div class="service top center">
+          <img src="/Images/graphisme.png" alt="graphisme" width="106px" />
+          <h5>Graphisme</h5>
+          <p>
+            Votre entreprise se doit d’avoir un logo professionnel de haute
+            définition et plus encore.
+          </p>
+        </div>
+        <div class="service top">
+          <img
+            src="/Images/gestionpublicitaire.png"
+            alt="gestionpublicitaire"
+            width="106px"
+          />
+          <h5>Gestion Publicitaire</h5>
+          <p>
+            Notre équipe se spécialise dans la visibilité en ligne via la
+            gestion de plateforme médiatique.
+          </p>
+        </div>
+        <div class="service">
+          <img
+            src="/Images/videographie.png"
+            alt="videographie"
+            width="106px"
+          />
+          <h5>Vidéographie</h5>
+          <p>
+            Lors d’une campagne publicitaire, la vidéo vient jouer un rôle clé
+            au succès de celle-ci.
+          </p>
+        </div>
+        <div class="service center">
+          <img
+            src="/Images/photographie.png"
+            alt="photographie"
+            width="106px"
+          />
+          <h5>Photographie</h5>
+          <p>
+            Il est important d’avoir des photos professionnelles ou des
+            souvenirs d’un événement marquant !
+          </p>
+        </div>
+        <div class="service">
+          <img src="/Images/Impression.png" alt="Impression" width="106px" />
+          <h5>Impression</h5>
+          <p>
+            Vous avez besoin de cartes d’affaires, de dépliants, de flyers, de
+            lettrages, etc.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
 </html>
