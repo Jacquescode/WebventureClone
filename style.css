@@ -61,6 +61,10 @@ body {
   z-index: 10;
 }
 
+.nav-toggle:hover {
+  background-color: transparent;
+}
+
 .links {
   position: fixed;
   top: -110%;
