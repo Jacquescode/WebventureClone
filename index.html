@@ -12,43 +12,41 @@
     <title>Webventure Clone</title>
   </head>
   <body>
-    <nav id="navbar">
-      <div class="nav-center">
-        <div class="nav-header">
-          <div class="logo">
-            <a href="index.html">
-              <img src="/Images/Logo.png" alt="Logo" width="100px" />
-            </a>
-          </div>
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
+    <div class="nav-center" id="navbar">
+      <div class="nav-header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/Images/Logo.png" alt="Logo" width="100px" />
+          </a>
         </div>
-        <ul class="links">
-          <li>
-            <a href="index.html">À Propos</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Nos Réalisations</a>
-          </li>
-          <li>
-            <a href="#">Soumission</a>
-          </li>
-          <li>
-            <a href="#">Catalogue</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <a class="phone-num" href="#"
-          >&#128222;&nbsp;&nbsp;&nbsp;(581) 681-0686</a
-        >
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-    </nav>
+      <ul class="links">
+        <li>
+          <a href="index.html">À Propos</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Nos Réalisations</a>
+        </li>
+        <li>
+          <a href="#">Soumission</a>
+        </li>
+        <li>
+          <a href="#">Catalogue</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <a class="phone-num" href="#"
+        >&#128222;&nbsp;&nbsp;&nbsp;(581) 681-0686</a
+      >
+    </div>
     <section id="main-section">
       <main>
         <div class="main-content">
@@ -257,6 +255,24 @@
         </div>
         <div class="shape-divider"></div>
       </div>
+    </section>
+    <section class="soumission">
+      <h3>Demande de Soumission</h3>
+      <p>
+        Vous voulez avoir une soumission ? Laissez-nous vos informations et l’un
+        de nos experts vous contactera.
+      </p>
+      <form>
+        <div class="input">
+          <label for="nom">Nom Complet</label>
+          <input type="text" required id="nom" />
+        </div>
+        <div class="input">
+          <label for="telephone">Téléphone</label>
+          <input type="te" required id="telephone" />
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
     </section>
     <script src="app.js"></script>
   </body>
