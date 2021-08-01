@@ -61,10 +61,6 @@ body {
   z-index: 10;
 }
 
-.nav-toggle:hover {
-  background-color: transparent;
-}
-
 .links {
   position: fixed;
   top: -110%;
@@ -159,10 +155,6 @@ button {
   border: none;
 
   transition: 0.3s ease-in-out;
-}
-
-button:hover {
-  background-color: #000;
 }
 
 .quisommesnous {
@@ -531,6 +523,10 @@ footer p {
 }
 
 @media (min-width: 1105px) {
+  button:hover {
+    background-color: #000;
+  }
+
   nav {
     display: flex;
     justify-content: center;
