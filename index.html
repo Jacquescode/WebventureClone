@@ -16,7 +16,7 @@
       <div class="nav-header">
         <div class="logo">
           <a href="index.html">
-            <img src="/Images/Logo.png" alt="Logo" width="100px" />
+            <img src="Images/Logo.png" alt="Logo" width="100px" />
           </a>
         </div>
         <button class="nav-toggle">
@@ -76,7 +76,7 @@
         <button>obtenir une soumission</button>
       </div>
       <div class="img-section">
-        <img src="/Images/quisommesnous.jpg" alt="quisommesnous-images" />
+        <img src="Images/quisommesnous.jpg" alt="quisommesnous-images" />
       </div>
       <div class="shape-divider"></div>
     </section>
@@ -84,7 +84,7 @@
       <h2>Nos Services</h2>
       <div class="services">
         <div class="service top">
-          <img src="/Images/siteweb.png" alt="siteweb" width="106px" />
+          <img src="Images/siteweb.png" alt="siteweb" width="106px" />
           <h5>Site Web</h5>
           <p>
             Vos clients ont besoin d’une interface simple et efficace lorsqu’il
@@ -92,7 +92,7 @@
           </p>
         </div>
         <div class="service top center">
-          <img src="/Images/graphisme.png" alt="graphisme" width="106px" />
+          <img src="Images/graphisme.png" alt="graphisme" width="106px" />
           <h5>Graphisme</h5>
           <p>
             Votre entreprise se doit d’avoir un logo professionnel de haute
@@ -101,7 +101,7 @@
         </div>
         <div class="service top">
           <img
-            src="/Images/gestionpublicitaire.png"
+            src="Images/gestionpublicitaire.png"
             alt="gestionpublicitaire"
             width="106px"
           />
@@ -113,7 +113,7 @@
         </div>
         <div class="service">
           <img
-            src="/Images/videographie.png"
+            src="Images/videographie.png"
             alt="videographie"
             width="106px"
           />
@@ -125,7 +125,7 @@
         </div>
         <div class="service center">
           <img
-            src="/Images/photographie.png"
+            src="Images/photographie.png"
             alt="photographie"
             width="106px"
           />
@@ -136,7 +136,7 @@
           </p>
         </div>
         <div class="service">
-          <img src="/Images/Impression.png" alt="Impression" width="106px" />
+          <img src="Images/Impression.png" alt="Impression" width="106px" />
           <h5>Impression</h5>
           <p>
             Vous avez besoin de cartes d’affaires, de dépliants, de flyers, de
@@ -253,15 +253,17 @@
           <h5>Nos Experts</h5>
           <span class="nombre">8+</span>
         </div>
-        <div class="shape-divider"></div>
       </div>
+      <div class="shape-divider"></div>
     </section>
     <section class="soumission">
-      <h3>Demande de Soumission</h3>
+      <div class="soumission-text">
+        <h3>Demande de Soumission</h3>
       <p>
         Vous voulez avoir une soumission ? Laissez-nous vos informations et l’un
         de nos experts vous contactera.
       </p>
+      </div>
       <form>
         <div class="input">
           <label for="nom">Nom Complet</label>
@@ -269,11 +271,52 @@
         </div>
         <div class="input">
           <label for="telephone">Téléphone</label>
-          <input type="te" required id="telephone" />
+          <input type="tel" required id="telephone" />
         </div>
         <button type="submit">Envoyer</button>
       </form>
     </section>
+    <footer>
+      <div class="footer-ctn">
+        <div class="contacts">
+          <h5>Nous Contacter</h5>
+          <div class="contact">
+            <h6>Raphael Laplante - Président</h6>
+            <p>
+              (581) 681-0686 #100
+              <br>
+              info@webventure.ca
+            </p>
+          </div>
+          <div class="contact">
+            <h6>Philippe Lavoie St-Cyr - Développement des Affaires</h6>
+            <p>
+              (581) 681-0686 #101
+              <br>
+              info@webventure.ca
+            </p>
+          </div>
+          <div class="contact">
+            <h6>Pierre-Olivier Bissonnette - Développement des Affaires
+            </h6>
+            <p>
+              (581) 681-0686 #102
+              <br>
+              info@webventure.ca
+            </p>
+          </div>
+        </div>
+        <div class="left-section">
+          <div class="marche">
+            <h5>Notre Marché</h5>
+            <img src="Images/marche.png" alt="Marché" width="555px">
+          </div>
+          <div class="copyright">
+            <p>TOUS DROITS RÉSERVÉS © 2021 WEBVENTURE | PROPULSÉ PAR WEBVENTURE</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
