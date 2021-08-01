@@ -48,11 +48,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-}
-
-.logo {
-  padding: 0.5em;
+  padding: 20px;
 }
 
 .nav-toggle {
@@ -61,7 +57,7 @@ body {
   background: transparent;
   border-color: transparent;
   cursor: pointer;
-  margin: 1em 0;
+  margin: 0;
   z-index: 10;
 }
 
@@ -72,7 +68,6 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   align-items: center;
   background-color: #111;
@@ -82,7 +77,6 @@ body {
 }
 
 .show-links {
-  z-index: 2;
   top: 0;
   bottom: 0;
 }
@@ -92,8 +86,8 @@ li {
 }
 
 a {
-  white-space: nowrap;
   color: var(--clr-white);
+  white-space: nowrap;
   text-decoration: none;
 }
 
@@ -152,8 +146,8 @@ main p {
 button {
   font-family: var(--ff-secondary);
   font-weight: 400;
-  text-transform: uppercase;
   font-size: 15px;
+  text-transform: uppercase;
   margin: 2em 0;
   padding: 15px 35px;
   color: white;
@@ -171,9 +165,8 @@ button:hover {
   position: relative;
   text-align: center;
   display: flex;
-  align-items: center;
   flex-direction: column-reverse;
-
+  align-items: center;
   padding: 20px 20px 100px 20px;
 
   background-image: url(https://webventure.ca/wp-content/uploads/2020/10/UntitledDesign_1895409101-2.png);
@@ -221,8 +214,8 @@ button:hover {
 .services-ctn h2 {
   color: var(--clr-primary);
   font-family: var(--ff-primary);
-  font-size: 60px;
   font-weight: 400;
+  font-size: 60px;
   text-align: center;
 
   padding: 20px;
@@ -231,8 +224,8 @@ button:hover {
 .services-ctn h5 {
   color: var(--clr-primary);
   font-family: var(--ff-primary);
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
 }
 
 .services-ctn p {
@@ -243,8 +236,9 @@ button:hover {
 }
 
 .service {
-  text-align: center;
   padding: 50px;
+  text-align: center;
+
   border-top: solid;
   border-width: 1px 0px 0px 0px;
   border-color: rgba(0, 0, 0, 0.12);
@@ -291,17 +285,17 @@ button:hover {
 }
 
 .clients h2 {
-  text-align: center;
   font-family: var(--ff-primary);
   font-weight: 300;
   font-size: 39px;
   padding: 40px 0;
+  text-align: center;
 }
 
 .client {
+  padding: 40px;
   border-top: solid;
   border-width: 1px 0px 0px 0px;
-  padding: 40px;
 }
 
 .client p {
@@ -333,8 +327,8 @@ button:hover {
 .realisations {
   color: var(--clr-primary);
   font-family: var(--ff-primary);
-  text-align: center;
   padding: 40px;
+  text-align: center;
   background-image: url(https://webventure.ca/wp-content/uploads/2020/10/UntitledDesign_469601929-1.png);
   background-position: top center;
   background-repeat: no-repeat;
@@ -368,17 +362,17 @@ button:hover {
 }
 
 .chiffres {
-  position: relative;
-  text-align: center;
   color: var(--clr-primary);
+  position: relative;
   padding: 30px 0px 100px 0px;
+  text-align: center;
 }
 
 .chiffres-ctn {
+  padding: 0 50px;
   border-top: solid;
   border-color: #333;
   border-width: 1px;
-  padding: 0 50px;
 }
 
 .chiffres h2 {
@@ -405,10 +399,10 @@ button:hover {
 }
 
 .nombre {
+  color: var(--clr-button);
   font-family: var(--ff-secondary);
   font-weight: 600;
   font-size: 50px;
-  color: var(--clr-button);
   padding: 10px;
 }
 
@@ -431,8 +425,8 @@ button:hover {
 .soumission h3 {
   display: inline-block;
   font-family: var(--ff-primary);
-  font-size: 30px;
   font-weight: 300;
+  font-size: 30px;
   border: solid;
   border-width: 0px 0px 1px 0px;
   border-color: rgba(0, 0, 0, 0.12);
@@ -440,8 +434,8 @@ button:hover {
 
 .soumission p {
   font-family: var(--ff-secondary);
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   color: var(--clr-secondary);
   padding-top: 10px;
   width: 90%;
@@ -452,19 +446,19 @@ button:hover {
 }
 
 .input label {
-  font-family: var(--ff-secondary);
-  font-size: 16px;
-  font-weight: 400;
   color: var(--clr-secondary);
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+  font-size: 16px;
 
   display: block;
 }
 
 .input input {
   width: 90vw;
+  height: 40px;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.12);
-  height: 40px;
 }
 
 footer {
@@ -487,7 +481,6 @@ footer h5 {
   font-family: var(--ff-primary);
   font-weight: 400;
   font-size: 16px;
-
   padding: 30px 0;
 }
 
@@ -717,12 +710,12 @@ footer p {
   }
 
   .chiffres h2 {
+    width: 33%;
     font-size: 45px;
+    text-align: end;
     border: solid;
     border-width: 0px 1px 0px 0px;
     border-color: rgba(0, 0, 0, 0.12);
-    width: 33%;
-    text-align: end;
   }
 
   .chiffres h5 {
