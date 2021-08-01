@@ -27,6 +27,7 @@
 
 body {
   color: var(--clr-white);
+  width: 100vw;
 }
 
 nav {
@@ -124,12 +125,18 @@ main {
   height: 100vh;
   display: grid;
   align-items: center;
+
   background-image: url("https://webventure.ca/wp-content/uploads/2020/10/UntitledDesign_1895409101-1.png");
-  background-color: #111;
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: contain;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+#main-section {
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/10/Sans-titre-2020-10-02T150528.920.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-content {
@@ -215,7 +222,7 @@ button:hover {
 
 .services-ctn {
   background-color: var(--clr-background);
-  padding: 20px;
+  padding: 20px 20px 100px 20px;
 }
 
 .services-ctn h2 {
@@ -250,14 +257,151 @@ button:hover {
   border-color: rgba(0, 0, 0, 0.12);
 }
 
-@media (min-width: 980px) {
+.testimonitals-ctn {
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/10/Sans-titre-2020-10-02T144344.878.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonitals {
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/10/UntitledDesign_469601929-2.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.pourquoi {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pourquoi h2 {
+  font-family: var(--ff-primary);
+  font-weight: 300;
+  font-size: 39px;
+  padding: 50px 0;
+}
+
+.pourquoi p {
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.clients {
+  padding: 40px;
+}
+
+.clients h2 {
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-weight: 300;
+  font-size: 39px;
+  padding: 40px 0;
+}
+
+.client {
+  border-top: solid;
+  border-width: 1px 0px 0px 0px;
+  padding: 40px;
+}
+
+.client p {
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.text::before {
+  content: "\2B50\2B50\2B50\2B50\2B50";
+  display: block;
+  padding-bottom: 10px;
+}
+
+.personne {
+  display: flex;
+  padding: 40px 0;
+}
+
+.personne img {
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.job {
+  font-size: 14px;
+}
+
+.realisations {
+  color: var(--clr-primary);
+  font-family: var(--ff-primary);
+  text-align: center;
+  padding: 40px;
+  background-image: url(https://webventure.ca/wp-content/uploads/2020/10/UntitledDesign_469601929-1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.realisations h2 {
+  font-size: 41px;
+  font-weight: 300;
+  padding: 30px;
+}
+
+.realisations h4 {
+  font-size: 23px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.realisations h6 {
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.realisations p {
+  color: var(--clr-secondary);
+  font-family: var(--ff-secondary);
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1105px) {
+  main,
+  .quisommesnous,
+  .testimonitals,
+  .realisations {
+    background-size: contain;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1105px) {
   nav {
+    display: flex;
+    justify-content: center;
     padding: 20px;
   }
 
+  .logo {
+    padding: 20px 100px 20px 20px;
+  }
+
   .nav-center {
+    width: 80vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .nav-toggle {
@@ -288,6 +432,11 @@ button:hover {
     background-color: transparent;
     z-index: 0;
   }
+
+  #main-section {
+    background-attachment: fixed;
+  }
+
   .main-content {
     margin-left: 12em;
     width: 40em;
@@ -342,5 +491,72 @@ button:hover {
     border-right: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .testimonitals-ctn {
+    background-attachment: fixed;
+  }
+
+  .pourquoi h2 {
+    font-size: 50px;
+  }
+
+  .pourquoi p {
+    width: 60%;
+    font-size: 17px;
+  }
+
+  .pourquoi img {
+    width: 1024px;
+  }
+
+  .clients-ctn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .clients {
+    width: 45%;
+    margin-right: 300px;
+  }
+
+  .clients h2 {
+    font-size: 60px;
+    text-align: left;
+  }
+
+  .realisations {
+    display: flex;
+    justify-content: center;
+  }
+
+  .realisations-ctn {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  .realisation {
+    text-align: left;
+  }
+
+  .realisation p {
+    width: 330px;
+  }
+
+  .lensventure {
+    border-right: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .aliments {
+    padding: 0 30px;
+  }
+
+  .mobile-btn {
+    display: none;
   }
 }
