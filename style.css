@@ -277,7 +277,7 @@ button {
 }
 
 .clients {
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 .clients h2 {
@@ -289,7 +289,7 @@ button {
 }
 
 .client {
-  padding: 40px;
+  padding: 30px 0;
   border-top: solid;
   border-width: 1px 0px 0px 0px;
 }
@@ -682,6 +682,10 @@ footer p {
 
   .realisation p {
     width: 330px;
+  }
+
+  .realisations img {
+    width: 350px;
   }
 
   .lensventure {
