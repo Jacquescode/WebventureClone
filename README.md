@@ -1,7 +1,7 @@
 # WebventureClone
+
+ I made a clone of the homepage of Webventure website with HTML, CSS and Javascript.
  
- Clone of Webventure website
- 
- There website: https://webventure.ca/
+ Their website: https://webventure.ca/
  
  Mine: https://jacquescode.github.io/WebventureClone/
